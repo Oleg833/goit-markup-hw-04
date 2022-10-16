@@ -2,8 +2,10 @@
   --primary-text-color: #212121;
   --primary-white-color: #ffffff;
   --accent-color: #2196F3;
+  --button-no-active: #f5f4fa;
   --accent-text-color: #757575;
   --accent-bgd-color: #2F303A;
+  --social-links: #afb1b8;
 }
 body {
   margin: 0;
@@ -68,6 +70,9 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+  padding: 32px 0; 
 }
 .site-nav-link {
   color: var(--primary-text-color);
@@ -79,10 +84,12 @@ img {
 .auth-nav-item+.auth-nav-item {
   margin-left: 50px;
 }
-.site-nav-link,
-.auth-nav-link {
-  display: block;
-  padding: 32px 0;
+.contact-icon {
+  margin-right: 10px; 
+}
+.icon-contact:hover,
+ .icon-contact:focus{
+  fill: var(--accent-color);
 }
 .hero-studio {
   background-color: var(--accent-bgd-color);
@@ -180,6 +187,14 @@ img {
 .features-item+.features-item {
   margin-left: 30px;
 }
+.features-icons {
+  display: flex;
+  height: 120px;
+  background-color: var(--button-no-active);
+  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+}
 .features-title {
   color: var(--primary-text-color);
   font-weight: 700;
@@ -202,13 +217,15 @@ img {
   margin-left: 30px;
 }
 .work-heading,
-  .comand-card-heading {
+  .comand-card-heading,
+  .clients-heading {
   color: var(--primary-text-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
 }
+
 .comand-card {
   background-color: #F5F4FA;
 }
@@ -239,7 +256,55 @@ img {
 }
 .comand-card-text {
   color: var(--accent-text-color);
+  margin-bottom: 16px;
 }
+.comand-social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-comand {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  fill: var(--social-links);
+}
+.icon-comand:hover,
+.icon-comand:focus {
+  background-color: var(--accent-color);
+  background-size: 100%;
+  border-radius: 50px;
+  fill: var(--primary-white-color);
+}
+.clients-heading {
+  margin-bottom: 50px;
+}
+.clients-list {
+  display: flex;
+}
+.clients-card-item+.clients-card-item {
+  margin-left: 30px;
+}
+.clients-link {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--social-links);
+  border-radius: 4px;
+}
+.clients-link {
+  fill: var(--social-links);
+}
+.clients-link:hover,
+.clients-link:focus {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
 .footer {
   background-color: var(--accent-bgd-color);
   max-width: 1600px;
