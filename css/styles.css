@@ -114,6 +114,7 @@ img {
   margin-bottom: 30px;
 }
 .section {
+  /* max-width: 1600px; */
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -307,7 +308,6 @@ img {
 
 .footer {
   background-color: var(--accent-bgd-color);
-  max-width: 1600px;
   margin: 0 auto;
   padding: 60px 0;
 }
@@ -354,6 +354,10 @@ img {
   .card-portfolio-link:focus {
     text-decoration: none;
   }
+.card-portfolio-link:hover {
+  display: block;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);  
+}
 .card-portfolio-box {
   border: 1px solid #EEEEEE;
   border-top: none;
@@ -385,9 +389,44 @@ img {
   display: flex;
   flex-wrap: wrap;
 }
-/* ✅ Застосується тільки до посилань, які лежать всередині тегу з класом social-links */
-/* .social-links a {
-  color: blue;
-  text-decoration: none;
-} */
-
+.parrent-adress {
+  display: flex;
+  align-items: baseline;
+}
+.social-links {
+  margin-left: 70px;
+}
+.join-heading-footer {
+  color: var(--primary-white-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.footer-social-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.links-item-footer {
+  margin-right: 10px;
+}
+.join-icon-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  fill: var(--primary-white-color);
+  background-color: rgba(255, 255, 255, 0.1);
+  background-size: 100%;
+  border-radius: 50px;
+}
+.join-icon-footer:hover {
+  background-color: var(--accent-color);
+  background-size: 100%;
+  border-radius: 50px;
+  fill: var(--primary-white-color);
+}
