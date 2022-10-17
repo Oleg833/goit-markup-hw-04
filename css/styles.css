@@ -182,21 +182,19 @@ img {
   .work-list,
   .comand-card-list {
   display: flex;
+  gap: 30px;
 }
 .features {
   font-size: 14px;
   text-align: left;
 }
-.features-item+.features-item {
-  margin-left: 30px;
-}
 .features-icons {
   display: flex;
   height: 120px;
   background-color: var(--button-no-active);
-  margin-bottom: 30px;
   justify-content: center;
   align-items: center;
+  margin-bottom: 30px;
 }
 .features-title {
   color: var(--primary-text-color);
@@ -215,9 +213,6 @@ img {
 }
 .work-heading {
   margin-bottom: 50px;
-}
-.work-item+.work-item {
-  margin-left: 30px;
 }
 .work-heading,
   .comand-card-heading,
@@ -239,9 +234,6 @@ img {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-}
-.comand-card-item+.comand-card-item {
-  margin-left: 30px;
 }
 .comand-card-box {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -391,8 +383,6 @@ img {
   font-size: 16px;
   line-height: 1.88;
 }
-
-
 .parrent-adress {
   display: flex;
   align-items: baseline;
