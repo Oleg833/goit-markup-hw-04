@@ -1,11 +1,11 @@
 :root {
   --primary-text-color: #212121;
   --primary-white-color: #ffffff;
-  --accent-color: #2196F3;
+  --hover-and-focus-color: #2196F3;
   --button-no-active: #f5f4fa;
   --accent-text-color: #757575;
   --accent-bgd-color: #2F303A;
-  --social-links: #afb1b8;
+  --social-links-color: #afb1b8;
 }
 body {
   margin: 0;
@@ -47,7 +47,7 @@ img {
 }
 .logo {
   display: block;
-  color: var(--accent-color);
+  color: var(--hover-and-focus-color);
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -84,23 +84,26 @@ img {
 .auth-nav-item+.auth-nav-item {
   margin-left: 50px;
 }
-.contact-icon {
+.contact-icon-svg {
   margin-right: 10px; 
 }
-.icon-contact:hover,
- .icon-contact:focus{
-  fill: var(--accent-color);
+.icon-contact-link {
+  fill: var(--accent-text-color);
+}
+.icon-contact-link:hover,
+ .icon-contact-link:focus{
+  fill: var(--hover-and-focus-color);
 }
 .hero-studio {
   background-color: var(--accent-bgd-color);
   max-width: 1600px;
   margin: 0 auto;
-  text-align: center;
   padding: 200px 0;
-  background-position: center;
-  background-repeat: no-repeat;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/new_photo.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  text-align: center;
 }
 .hero-studio-heading {
   color: var(--primary-white-color);
@@ -138,7 +141,7 @@ img {
 }
 .btn-studio {
   color: var(--primary-white-color);
-  background:var(--accent-color);
+  background:var(--hover-and-focus-color );
   min-width: 216px;
   height: 50px;
   font-weight: 700;
@@ -161,7 +164,7 @@ img {
   .btn-portfolio:hover,
   .btn-portfolio:focus {
   color: var(--primary-white-color);
-  background-color: var(--accent-color);
+  background-color: var(--hover-and-focus-color);
   outline: solid 1px transparent;
 }
 .visually-hidden {
@@ -226,7 +229,6 @@ img {
   line-height: 1.17;
   text-align: center;
 }
-
 .comand-card {
   background-color: #F5F4FA;
 }
@@ -270,11 +272,11 @@ img {
   height: 44px;
   justify-content: center;
   align-items: center;
-  fill: var(--social-links);
+  fill: var(--social-links-color);
 }
 .icon-comand:hover,
 .icon-comand:focus {
-  background-color: var(--accent-color);
+  background-color: var(--hover-and-focus-color);
   background-size: 100%;
   border-radius: 50px;
   fill: var(--primary-white-color);
@@ -294,16 +296,16 @@ img {
   height: 92px;
   justify-content: center;
   align-items: center;
-  border: 1px solid var(--social-links);
+  border: 1px solid var(--social-links-color);
   border-radius: 4px;
 }
 .clients-link {
-  fill: var(--social-links);
+  fill: var(--social-links-color);
 }
 .clients-link:hover,
 .clients-link:focus {
-  fill: var(--accent-color);
-  border-color: var(--accent-color);
+  fill: var(--hover-and-focus-color);
+  border-color: var(--hover-and-focus-color);
 }
 
 .footer {
@@ -333,14 +335,14 @@ img {
 .tel {
   color: rgba(255, 255, 255, 0.6);  
 }
-.link-current{
-  color: var(--accent-color);
+.link-current-page{
+  color: var(--hover-and-focus-color);
 }
 .link:hover,
   .link:focus {
-  color: var(--accent-color);
-  text-decoration: underline;
-  outline: solid 1px transparent;
+  color: var(--hover-and-focus-color);
+  /* text-decoration: underline; */
+  /* outline: solid 1px transparent; */
 }
 .filter-list {
   display: flex;
@@ -352,12 +354,10 @@ img {
 }
 .card-portfolio-link:hover,
   .card-portfolio-link:focus {
-    text-decoration: none;
-  }
-.card-portfolio-link:hover {
   display: block;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);  
-}
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  text-decoration: none;
+  }
 .card-portfolio-box {
   border: 1px solid #EEEEEE;
   border-top: none;
@@ -425,7 +425,7 @@ img {
   border-radius: 50px;
 }
 .join-icon-footer:hover {
-  background-color: var(--accent-color);
+  background-color: var(--hover-and-focus-color );
   background-size: 100%;
   border-radius: 50px;
   fill: var(--primary-white-color);
