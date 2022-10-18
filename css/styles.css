@@ -29,7 +29,7 @@ img {
   margin: 0;
 }
 .header {
-  border-bottom: 1px solid #ECECEC;;
+  border-bottom: 1px solid #ECECEC;
 }
 .header .container {
   display: flex;
@@ -62,7 +62,7 @@ img {
   margin-right: 93px;
 }
 .main-nav .logo-span {
-  padding: 24px 0 25px 0
+  padding: 24px 0 25px 0;
 }
 .site-nav-link,
 .auth-nav-link {
@@ -117,7 +117,6 @@ img {
   margin-bottom: 30px;
 }
 .section {
-  /* max-width: 1600px; */
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -136,7 +135,7 @@ img {
 }
 .btn-studio {
   color: var(--primary-white-color);
-  background:var(--hover-and-focus-color );
+  background:var(--hover-and-focus-color);
   min-width: 216px;
   height: 50px;
   font-weight: 700;
@@ -332,7 +331,7 @@ img {
 .tel {
   color: rgba(255, 255, 255, 0.6);  
 }
-.link-current-page{
+.link-current-page {
   color: var(--hover-and-focus-color);
 }
 .link:hover,
